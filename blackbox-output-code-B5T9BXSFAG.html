@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FangMc | Premium Minecraft Server</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Animated Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Fang<span class="highlight">Mc</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#vote">Vote</a></li>
+        </ul>
+        <a href="#" class="btn-nav" onclick="copyIP()">Play Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content hidden">
+            <h1 class="glitch" data-text="FangMc">FangMc</h1>
+            <p class="subtitle">Survival. Griefing. Community.</p>
+            <div class="server-status">
+                <span class="status-dot"></span> Server Online: <span id="player-count">124</span>/500
+            </div>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="copyIP()">Copy IP: play.fangmc.net</button>
+                <a href="#store" class="btn-secondary">Visit Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title hidden">Why Play On FangMc?</h2>
+        <div class="feature-grid">
+            <div class="card hidden">
+                <i class="fas fa-microchip"></i>
+                <h3>Lag Free</h3>
+                <p>Optimized PaperMC server running on enterprise-grade hardware for 0ms latency.</p>
+            </div>
+            <div class="card hidden">
+                <i class="fas fa-users"></i>
+                <h3>Active Community</h3>
+                <p>Join our Discord and meet thousands of players. Events hosted every weekend!</p>
+            </div>
+            <div class="card hidden">
+                <i class="fas fa-shield-alt"></i>
+                <h3>No Griefing</h3>
+                <p>Advanced claim plugins ensure your base is safe, but you can still raid unprotected lands.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section id="store" class="store">
+        <h2 class="section-title hidden">Server Store</h2>
+        <p class="store-desc hidden">Support the server and get exclusive perks!</p>
+        
+        <div class="store-grid">
+            <!-- Item 1 -->
+            <div class="store-card hidden">
+                <div class="card-header vip">
+                    <i class="fas fa-crown"></i>
+                    <h3>VIP</h3>
+                </div>
+                <div class="price">$5.00<span>/mo</span></div>
+                <ul class="perks">
+                    <li><i class="fas fa-check"></i> /fly Access</li>
+                    <li><i class="fas fa-check"></i> 2x /sell multiplier</li>
+                    <li><i class="fas fa-check"></i> Custom Tag: [VIP]</li>
+                    <li><i class="fas fa-check"></i> 5 Vote Keys</li>
+                </ul>
+                <button class="btn-buy">Purchase</button>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="store-card featured hidden">
+                <div class="card-header mvp">
+                    <i class="fas fa-dragon"></i>
+                    <h3>MVP</h3>
+                </div>
+                <div class="price">$10.00<span>/mo</span></div>
+                <ul class="perks">
+                    <li><i class="fas fa-check"></i> All VIP Perms</li>
+                    <li><i class="fas fa-check"></i> /feed & /repair</li>
+                    <li><i class="fas fa-check"></i> 3x /sell multiplier</li>
+                    <li><i class="fas fa-check"></i> 15 Vote Keys</li>
+                </ul>
+                <button class="btn-buy">Purchase</button>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="store-card hidden">
+                <div class="card-header legend">
+                    <i class="fas fa-gem"></i>
+                    <h3>LEGEND</h3>
+                </div>
+                <div class="price">$25.00<span>/mo</span></div>
+                <ul class="perks">
+                    <li><i class="fas fa-check"></i> All MVP Perms</li>
+                    <li><i class="fas fa-check"></i> /craft & /workbench</li>
+                    <li><i class="fas fa-check"></i> 5x /sell multiplier</li>
+                    <li><i class="fas fa-check"></i> 50 Vote Keys</li>
+                </ul>
+                <button class="btn-buy">Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Fang<span class="highlight">Mc</span></div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2023 FangMc Server. Not affiliated with Mojang.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
